@@ -88,6 +88,7 @@ class KafkaCharm(TypedCharmBase[CharmConfig]):
                 {"path": "/metrics", "port": 9100},
                 {"path": "/metrics", "port": 9101},
             ],
+            logs_slots=["charmed-kafka:logs"],
         )
 
     @property
